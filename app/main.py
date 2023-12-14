@@ -2,6 +2,7 @@
 Main file for the API.
 """
 import os
+import logging
 from contextlib import asynccontextmanager
 from typing import List, Dict
 from fastapi import FastAPI
@@ -62,6 +63,17 @@ app = FastAPI(
     version="0.0.1",
 )
 
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler("log_file.log"),
+        logging.StreamHandler(),
+    ],
+)
+
+# Logging
+logging.info(f"{{'Query': {description}, 'Response': {predictions[0]}}}")
 
 @app.get("/", tags=["Welcome"])
 def show_welcome_page():
