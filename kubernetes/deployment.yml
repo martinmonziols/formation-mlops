@@ -19,11 +19,11 @@ spec:
           imagePullPolicy: Always
           env:
             - name: MLFLOW_TRACKING_URI
-              value: https://user-mmonziols-185650.user.lab.sspcloud.fr
+              value: https://user-mmonziols-239313.user.lab.sspcloud.fr
             - name: MLFLOW_MODEL_NAME
               value: fasttext
             - name: MLFLOW_MODEL_VERSION
-              value: "2"
+              value: "1"
           resources:
             limits:
               memory: "2Gi"
