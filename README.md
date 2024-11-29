@@ -22,4 +22,4 @@ L'optimisation des hyperparamètres est cruciale pour maximiser les performances
 
 La dernière étape de notre formation se concentre sur la maintenance continue des modèles en production. Vous apprendrez les meilleures pratiques pour surveiller les performances du modèle, gérer les mises à jour, et assurer la stabilité et la fiabilité dans un environnement de production.
 
-## test 
+## test xx
